@@ -66,38 +66,5 @@ Tested against 12 real questions spanning direct lookups, multi-year comparisons
 
 ---
 
-## 🖼️ Screenshots
-
-*(Add 2-3 screenshots here — chat interface, insights dashboard)*
-
----
-
-## 🚀 Running Locally
-
-```bash
-# Clone the repo
-git clone https://github.com/YOUR_USERNAME/placewise.git
-cd placewise
-
-# Set up virtual environment
-python -m venv venv
-venv\Scripts\activate   # Windows
-# source venv/bin/activate   # Mac/Linux
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Add your Groq API key
-echo "GROQ_API_KEY=your_key_here" > .env
-
-# Build the vector index (one-time)
-python src/embed_store.py
-python src/analytics.py
-
-# Run the app
-streamlit run app.py
-```
-
----
 
 
